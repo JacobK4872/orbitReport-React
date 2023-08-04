@@ -3,7 +3,10 @@ const Table = ({ sat }) => {
       <table>
        <thead>
         <tr>
-          <th>Header TBD</th>
+          <th>Name</th>
+          <th>Type of satellite</th>
+          <th>Launch Date</th>
+          <th>Status</th>
         </tr>
         </thead>
         <tbody>
