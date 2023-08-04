@@ -20,11 +20,11 @@ const Table = ({ sat }) => {
           }
           
           return (
-            <tr>
-              <td key={id}>{satellite.name}</td>
-              <td key={id}>{satellite.type}</td>
-              <td key={id}>{satellite.launchDate}</td>
-              <td key={id}>{status}</td>
+            <tr key={id}>
+              <td>{satellite.name}</td>
+              <td>{satellite.type}</td>
+              <td>{satellite.launchDate}</td>
+              <td>{status}</td>
             </tr>
           )
         })}
