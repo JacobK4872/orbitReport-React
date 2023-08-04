@@ -1,8 +1,11 @@
 import satData from "./satData";
 
-const Buttons = (filterByType, setSat, displaySats) => {
+const Buttons = (props) => {
+  const {displaySats, filterByType, setSat} = props;
+  console.log(displaySats)
   return (
     <div>
+      
       {displaySats.map((sat, id) => {
         return (
           <button onClick={() => filterByType(sat)} key={id}>
@@ -12,7 +15,8 @@ const Buttons = (filterByType, setSat, displaySats) => {
       })}
 
       {/* <button>Placeholder Button</button> */}
-      <button onClick={(setSat) => {setSat(satData)}}>
+      {console.log("hhhhhh" + setSat)};
+      <button onClick={() => {setSat(satData)}}>
         All Orbits
       </button>
     </div>
