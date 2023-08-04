@@ -2,7 +2,6 @@ import satData from "./satData";
 
 const Buttons = (props) => {
   const {displaySats, filterByType, setSat} = props;
-  console.log(displaySats)
   return (
     <div>
       
@@ -15,7 +14,7 @@ const Buttons = (props) => {
       })}
 
       {/* <button>Placeholder Button</button> */}
-      {console.log("hhhhhh" + setSat)};
+
       <button onClick={() => {setSat(satData)}}>
         All Orbits
       </button>
