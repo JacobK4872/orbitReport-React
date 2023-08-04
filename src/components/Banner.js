@@ -1,4 +1,4 @@
-export default Banner => {
+let Banner = () => {
     return(
         <div>
             <header>Orbit Report</header>
@@ -6,3 +6,5 @@ export default Banner => {
         </div>
     );
 }
+
+export default Banner;
